@@ -13,6 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat '''
+                call venv\\Scripts\\activate
                 echo 'Test Step: We run testing tool like pytest here'
                 python -m pytest
                 '''
