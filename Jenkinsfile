@@ -13,9 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat '''
-                call venv\\Scripts\\activate
-                echo 'Test Step: We run testing tool like pytest here'
-                python -m pytest
+                "C:\\Users\\Asus\\Lab6-Jenkins\\venv\\Scripts\\python.exe" -m pytest
                 '''
             }
         }
